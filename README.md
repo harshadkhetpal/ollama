@@ -1,3 +1,18 @@
+## 🧑‍💻 My Fork — Harshad Khetpal (DevOps / MLOps Engineer)
+
+I use this fork of Ollama to run local LLMs inside **air-gapped Kubernetes clusters** and on developer workstations without relying on external API costs. My setup runs Llama 3, Mistral-7B, and Phi-3 behind a custom FastAPI proxy.
+
+### My Setup
+- Deployed as a Kubernetes Deployment with persistent volume for model storage
+- GPU node affinity rules via Kubernetes taints/tolerations
+- Prometheus metrics scraping for token throughput monitoring
+- Wrapped with a FastAPI middleware layer for auth + rate-limiting
+
+### Why I forked this
+Primarily to test custom model configurations and experiment with quantization settings for specific hardware profiles in my homelab and cloud environments.
+
+---
+
 <p align="center">
   <a href="https://ollama.com">
     <img src="https://github.com/ollama/ollama/assets/3325447/0d0b44e2-8f4a-4e99-9b52-a5c1c741c8f7" alt="ollama" width="200"/>
